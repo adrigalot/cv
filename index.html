@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adriana Morales — Espacio Digital</title>
+  
+  <!-- tipografía syne para títulos; avenir configurada en css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- hero wrapping section -->
+  <div class="hero-wrapper">
+    <!-- navbar -->
+    <nav>
+      <div class="logo-space"></div>
+      <div class="nav-links">
+        <a href="mailto:adrigalotm@gmail.com" class="nav-pill-email">adrigalotm@gmail.com</a>
+        <a href="https://instagram.com/adrianagalot" target="_blank" class="nav-pill">Instagram ↗</a>
+        <a href="https://www.linkedin.com/in/adriana-galot-8b070b29a" target="_blank" class="nav-pill">LinkedIn ↗</a>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="hero">
+      <div class="hero-bg-text">MARKETER DESIGNER</div>
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1>Estrategia, creatividad & <span>tecnología.</span></h1>
+          <p>Soy estudiante de mercadotecnia digital. Me gusta explorar la conexión entre marketing, creatividad, tecnología e inteligencia artificial.</p>
+          <div class="concept-tags-pill">innovación · vida · marketing · creatividad · tecnología</div>
+        </div>
+        
+        <!-- gafete 3d -->
+        <div class="badge-container">
+          <div class="badge">
+            <div class="badge-strap"></div>
+            <div class="badge-ring"></div>
+            <div class="badge-tag">DESIGNER & MARKETER</div>
+            <img src="adri.JPG" class="badge-photo" alt="Adriana Morales">
+            <div class="badge-name">Adriana Morales</div>
+            <div class="badge-sub-note">Mercadotecnia Digital</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- manifiesto (coral exacto) -->
+  <section class="manifesto-section">
+    <div class="manifesto-card">
+      <p class="manifesto-text">“Cuando hagan cualquier trabajo, háganlo con gusto.”</p>
+      <span class="manifesto-author">— Colosenses 3:23</span>
+    </div>
+  </section>
+
+  <!-- sistema de carpetas físicas súperpuestas (cv & about me) -->
+  <section class="folders-section">
+    <div class="tabs-container">
+      <button class="tab-btn tab-pink active" onclick="openTab(event, 'about')">( sobre mí )</button>
+      <button class="tab-btn tab-yellow-highlight" onclick="openTab(event, 'edu')">( educación )</button>
+      <button class="tab-btn tab-blue" onclick="openTab(event, 'exp')">( experiencia )</button>
+      <button class="tab-btn tab-green" onclick="openTab(event, 'skills')">( skills )</button>
+    </div>
+    
+    <div class="folder-body">
+      <!-- sobre mí -->
+      <div id="about" class="tab-content active">
+        <h3>About Me</h3>
+        <span class="sub-clean">un poco sobre mí</span>
+        <p class="about-text">Soy una persona curiosa, creativa y estratégica. Me apasiona explorar nuevas ideas, aprender de forma constante y conectar el mundo del marketing digital con soluciones tecnológicas e inteligencia artificial. Disfruto comunicar historias y desarrollar proyectos desde un enfoque fresco, analítico y humano.</p>
+      </div>
+
+      <!-- educación -->
+      <div id="edu" class="tab-content">
+        <h3>Educación</h3>
+        <div class="edu-list">
+          <div class="item-block">
+            <span class="pill-type">LICENCIATURA</span>
+            <h4>Mercadotecnia Digital</h4>
+            <p>Universidad Cuauhtémoc, Aguascalientes</p>
+          </div>
+          <div class="item-block">
+            <span class="pill-type">CAPACITACIÓN</span>
+            <h4>Curso en Inteligencia Artificial</h4>
+            <p>Capacitación realizada en Aguascalientes enfocada en herramientas y tecnologías emergentes.</p>
+          </div>
+          <div class="item-block">
+            <span class="pill-type">TÉCNICO</span>
+            <h4>Técnico en Programación</h4>
+            <p>CECyTEA Ferrocarriles, Aguascalientes</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- experiencia real con ab marketing -->
+      <div id="exp" class="tab-content">
+        <h3>Experience</h3>
+        <div class="exp-list">
+          <div class="item-block">
+            <span class="pill-type">ACTUAL</span>
+            <h4>Estrategia & Desarrollo Web — AB Marketing</h4>
+            <p>Desarrollo de proyectos creativos, páginas web e implementación de campañas digitales en Aguascalientes.</p>
+          </div>
+          <div class="item-block">
+            <span class="pill-type">CREATIVIDAD</span>
+            <h4>Branding & Contenido Creativo</h4>
+            <p>Diseño conceptual de identidad de marca, empaque y formatos editoriales con dirección estética única.</p>
+          </div>
+          <div class="item-block">
+            <span class="pill-type">SERVICIO</span>
+            <h4>Atención, Cuidado & Servicio</h4>
+            <p>Experiencia como niñera y mesera, desarrollando habilidades de cuidado responsable, atención al detalle, comunicación clara y resolución bajo presión.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- skills y herramientas (tools exactas) -->
+      <div id="skills" class="tab-content">
+        <h3>Skills</h3>
+        <div class="skills-wrapper">
+          <span class="skill-chip">Marketing</span>
+          <span class="skill-chip">Diseño</span>
+          <span class="skill-chip">Comunicación</span>
+          <span class="skill-chip">Programación</span>
+          <span class="skill-chip">Creatividad</span>
+          <span class="skill-chip">Inteligencia Artificial</span>
+          <span class="skill-chip">Análisis</span>
+        </div>
+        
+        <h4 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.1rem;">Tools</h4>
+        <div class="skills-wrapper">
+          <span class="tool-chip">Figma</span>
+          <span class="tool-chip">Canva</span>
+          <span class="tool-chip">Adobe</span>
+          <span class="tool-chip">HTML</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- creative project: podcast -->
+  <section class="podcast-section">
+    <div class="podcast-card">
+      <div class="podcast-img-container">
+        <img src="noeraparatanto.png" alt="No Era Para Tanto Podcast" class="podcast-cover">
+      </div>
+      <div class="podcast-info">
+        <span class="category-pill">CREATIVE PROJECT</span>
+        <h3>Podcast: No Era Para Tanto 🎙️</h3>
+        <p>Un espacio de tres amigas donde hablamos de amor, experiencias y esas conversaciones que normalmente terminan entre amigas.</p>
+        <div class="episode-box">
+          <strong>Episodio 01</strong> — La primera vez que nos rompieron el corazón <span class="duration">• 15 min</span>
+        </div>
+        <a href="https://drive.google.com/file/d/1Ey6que_tcgcRsT-hdp_-19RPINtqyGDQ/view?usp=sharing" target="_blank" class="btn-podcast">Escuchar episodio en Drive ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- brand projects con enfoques reales -->
+  <section class="brand-section">
+    <div class="section-title">
+      <h2>Brand Projects</h2>
+    </div>
+    <div class="brand-grid">
+      
+      <!-- 01 rhode 2026 -->
+      <a href="rhode.pdf" target="_blank" class="mac-folder folder-pink">
+        <div class="mac-tab"><span>2026</span></div>
+        <div class="mac-content">
+          <div class="brand-img-wrap"><img src="rhode.png" alt="Rhode"></div>
+          <div class="brand-meta">
+            <h4>Rhode</h4>
+            <span class="brand-cat">CAMPAÑA DIGITAL & CONTENIDO</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 02 leiza 2026 -->
+      <a href="leiza.pdf" target="_blank" class="mac-folder folder-ocean">
+        <div class="mac-tab"><span>2026</span></div>
+        <div class="mac-content">
+          <div class="brand-img-wrap"><img src="leiza.jpg" alt="Leiza"></div>
+          <div class="brand-meta">
+            <h4>Leiza</h4>
+            <span class="brand-cat">INVESTIGACIÓN DE MERCADO</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 03 bloom 2025 -->
+      <a href="bloom.pdf" target="_blank" class="mac-folder folder-vibrant-green">
+        <div class="mac-tab"><span>2025</span></div>
+        <div class="mac-content">
+          <div class="brand-img-wrap"><img src="bloom.png" alt="Bloom"></div>
+          <div class="brand-meta">
+            <h4>Bloom</h4>
+            <span class="brand-cat">BRANDING & ESTRATEGIA</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 04 porcini sapore 2024 -->
+      <a href="porcinitisapore.pdf" target="_blank" class="mac-folder folder-orange">
+        <div class="mac-tab"><span>2024</span></div>
+        <div class="mac-content">
+          <div class="brand-img-wrap"><img src="porcinisapore.png" alt="Porcini Sapore"></div>
+          <div class="brand-meta">
+            <h4>Porcini Sapore</h4>
+            <span class="brand-cat">EDITORIAL & MARCA</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- web & technology con fechas actualizadas -->
+  <section class="web-section">
+    <div class="section-title">
+      <h2>Web & Technology</h2>
+    </div>
+    <div class="web-5-grid">
+      
+      <!-- 01 alfa & omega 2024 -->
+      <a href="https://adrigalot.github.io/ayo/" target="_blank" class="mac-folder folder-pink">
+        <div class="mac-tab"><span>2024</span></div>
+        <div class="mac-content">
+          <h4>Alfa & Omega</h4>
+          <p>Desarrollo Web</p>
+          <span class="web-link">Ver sitio ↗</span>
+        </div>
+      </a>
+
+      <!-- 02 coparmex 2025 -->
+      <a href="https://coparmex.netlify.app" target="_blank" class="mac-folder folder-vibrant-green">
+        <div class="mac-tab"><span>2025</span></div>
+        <div class="mac-content">
+          <h4>Coparmex</h4>
+          <p>Sitio Web & Contenido</p>
+          <span class="web-link">Ver sitio ↗</span>
+        </div>
+      </a>
+
+      <!-- 03 distrito victoria 2026 -->
+      <a href="https://distritovictoria.netlify.app" target="_blank" class="mac-folder folder-yellow-highlight">
+        <div class="mac-tab"><span>2026</span></div>
+        <div class="mac-content">
+          <h4>Distrito Victoria</h4>
+          <p>Landing Page Comercial</p>
+          <span class="web-link">Ver sitio ↗</span>
+        </div>
+      </a>
+
+      <!-- 04 aunna landing 2026 -->
+      <a href="https://aunna-landing.netlify.app" target="_blank" class="mac-folder folder-ocean">
+        <div class="mac-tab"><span>2026</span></div>
+        <div class="mac-content">
+          <h4>Aunna Landing</h4>
+          <p>Landing Page Inmobiliaria</p>
+          <span class="web-link">Ver sitio ↗</span>
+        </div>
+      </a>
+
+      <!-- 05 alvaplast mx 2026 -->
+      <a href="https://alvaplastmx.com" target="_blank" class="mac-folder folder-orange">
+        <div class="mac-tab"><span>2026</span></div>
+        <div class="mac-content">
+          <h4>Alvaplast MX</h4>
+          <p>Sitio Web Industrial</p>
+          <span class="web-link">Ver sitio ↗</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- contacto let's connect -->
+  <section class="connect-section">
+    <div class="connect-header">
+      <h2>LET'S CONNECT.</h2>
+      <p>¿Hablamos de ideas, proyectos o algo nuevo?</p>
+    </div>
+    
+    <div class="connect-body-full">
+      <div class="connect-blocks">
+        <div class="connect-block">
+          <span class="block-label">EMAIL</span>
+          <a href="mailto:adrigalotm@gmail.com" class="block-value">adrigalotm@gmail.com</a>
+        </div>
+        <div class="connect-block">
+          <span class="block-label">PHONE</span>
+          <span class="block-value">449 101 7717</span>
+        </div>
+        <div class="connect-block">
+          <span class="block-label">LOCATION</span>
+          <span class="block-value">📍 Aguascalientes, México</span>
+        </div>
+        <div class="connect-block buttons-block">
+          <a href="https://instagram.com/adrianagalot" target="_blank" class="btn-connect">Instagram ↗</a>
+          <a href="https://www.linkedin.com/in/adriana-galot-8b070b29a" target="_blank" class="btn-connect">LinkedIn ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer coral con firma adrianamorales - adri -->
+  <footer class="custom-footer">
+    <div class="footer-content">
+      <div class="footer-name">adrianamorales - <span class="footer-green-text">adri</span></div>
+      <div class="footer-socials">
+        <a href="https://instagram.com/adrianagalot" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/in/adriana-galot-8b070b29a" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function openTab(evt, tabName) {
+      let contents = document.getElementsByClassName("tab-content");
+      for (let i = 0; i < contents.length; i++) {
+        contents[i].classList.remove("active");
+      }
+      let buttons = document.getElementsByClassName("tab-btn");
+      for (let i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove("active");
+      }
+      document.getElementById(tabName).classList.add("active");
+      evt.currentTarget.classList.add("active");
+    }
+  </script>
+</body>
+</html>
