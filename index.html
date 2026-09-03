@@ -3,336 +3,421 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adriana Morales — Espacio Digital</title>
+  <title>Adriana Morales — Marketing Digital & Creatividad</title>
   
-  <!-- tipografía syne para títulos; avenir configurada en css -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,600&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- hero wrapping section -->
-  <div class="hero-wrapper">
-    <!-- navbar -->
-    <nav>
-      <div class="logo-space"></div>
-      <div class="nav-links">
-        <a href="mailto:adrigalotm@gmail.com" class="nav-pill-email">adrigalotm@gmail.com</a>
-        <a href="https://instagram.com/adrianagalot" target="_blank" class="nav-pill">Instagram ↗</a>
-        <a href="https://www.linkedin.com/in/adriana-galot-8b070b29a" target="_blank" class="nav-pill">LinkedIn ↗</a>
+  <!-- barra de navegacion superior -->
+  <nav class="nav-bar-top bg-dark-green-nav">
+    <div class="nav-container">
+      <div class="nav-brand text-light-lime">Adriana Morales</div>
+      <div class="nav-links-buttons">
+        <a href="https://instagram.com/adrianagalot" target="_blank" class="nav-btn-lime">Instagram</a>
+        <a href="https://www.linkedin.com/in/adriana-galot-8b070b29a" target="_blank" class="nav-btn-lime">LinkedIn</a>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- hero section -->
-    <section class="hero">
-      <div class="hero-bg-text">MARKETER DESIGNER</div>
-      <div class="hero-container">
-        <div class="hero-text">
-          <h1>Estrategia, creatividad & <span>tecnología.</span></h1>
-          <p>Soy estudiante de mercadotecnia digital. Me gusta explorar la conexión entre marketing, creatividad, tecnología e inteligencia artificial.</p>
-          <div class="concept-tags-pill">innovación · vida · marketing · creatividad · tecnología</div>
-        </div>
+  <!-- seccion hero principal -->
+  <header class="hero">
+    <div class="hero-container">
+      
+      <div class="hero-text-block">
+        <span class="hero-tag">MARKETING DIGITAL & CREATIVIDAD</span>
         
-        <!-- gafete 3d -->
-        <div class="badge-container">
-          <div class="badge">
-            <div class="badge-strap"></div>
-            <div class="badge-ring"></div>
-            <div class="badge-tag">DESIGNER & MARKETER</div>
-            <img src="adri.JPG" class="badge-photo" alt="Adriana Morales">
-            <div class="badge-name">Adriana Morales</div>
-            <div class="badge-sub-note">Mercadotecnia Digital</div>
-          </div>
+        <h1 class="hero-title">
+          Marketing, creatividad <span class="highlight-pink-cursive">y un poquito de código.</span>
+        </h1>
+        
+        <p class="hero-desc">Me gusta hacer que las ideas se vean bien, pero también que tengan sentido. Trabajo entre marketing, contenido, branding y web para convertir una idea en algo que realmente pueda funcionar.</p>
+        
+        <div class="postit-sticker-inline">
+          <p>“Cuando hagan cualquier trabajo, háganlo con gusto.”</p>
+          <span>— Colosenses 3:23</span>
         </div>
       </div>
-    </section>
-  </div>
+      
+      <!-- gafete -->
+      <div class="badge-wrapper">
+        <div class="badge">
+          <div class="badge-strap"></div>
+          <div class="badge-ring-pink"></div>
+          <div class="badge-tag-pink">MARKETING DIGITAL & CREATIVIDAD</div>
+          <img src="adri.JPG" class="badge-photo" alt="Adriana Morales">
+          <div class="badge-name-blue">Adriana Morales</div>
+        </div>
+      </div>
 
-  <!-- manifiesto (coral exacto) -->
-  <section class="manifesto-section">
-    <div class="manifesto-card">
-      <p class="manifesto-text">“Cuando hagan cualquier trabajo, háganlo con gusto.”</p>
-      <span class="manifesto-author">— Colosenses 3:23</span>
+    </div>
+  </header>
+
+  <!-- seccion sobre mi -->
+  <section class="about-standalone-section">
+    <div class="about-standalone-card bg-cerulean-light-inner">
+      <span class="sub-tag tag-cerulean-dark">UN POCO SOBRE MÍ</span>
+      <h2 class="text-cerulean-dark">About me</h2>
+      <p class="about-text text-cerulean-dark">Estoy estudiando Mercadotecnia Digital y, en el camino, he terminado mezclando todo lo que me gusta: crear ideas, darles forma, hacer contenido, pensar estrategias y también meterme a código cuando hace falta. He trabajado en proyectos de branding, campañas, páginas web y contenido, y algo que me gusta mucho es encontrar la forma de que una idea no se quede solo en “se ve bonito”, sino que tenga un propósito.</p>
     </div>
   </section>
 
-  <!-- sistema de carpetas físicas súperpuestas (cv & about me) -->
+  <!-- seccion cv -->
   <section class="folders-section">
-    <div class="tabs-container">
-      <button class="tab-btn tab-pink active" onclick="openTab(event, 'about')">( sobre mí )</button>
-      <button class="tab-btn tab-yellow-highlight" onclick="openTab(event, 'edu')">( educación )</button>
-      <button class="tab-btn tab-blue" onclick="openTab(event, 'exp')">( experiencia )</button>
-      <button class="tab-btn tab-green" onclick="openTab(event, 'skills')">( skills )</button>
+    <div class="folder-header-tabs">
+      <button class="top-tab tab-sinopia active" data-tab="edu">
+        Educación
+      </button>
+      <button class="top-tab tab-rose" data-tab="exp">
+        Experiencia
+      </button>
+      <button class="top-tab tab-grape" data-tab="skills">
+        Skills
+      </button>
     </div>
-    
-    <div class="folder-body">
-      <!-- sobre mí -->
-      <div id="about" class="tab-content active">
-        <h3>About Me</h3>
-        <span class="sub-clean">un poco sobre mí</span>
-        <p class="about-text">Soy una persona curiosa, creativa y estratégica. Me apasiona explorar nuevas ideas, aprender de forma constante y conectar el mundo del marketing digital con soluciones tecnológicas e inteligencia artificial. Disfruto comunicar historias y desarrollar proyectos desde un enfoque fresco, analítico y humano.</p>
-      </div>
 
-      <!-- educación -->
-      <div id="edu" class="tab-content">
+    <div class="folder-body-cv">
+      
+      <!-- educacion -->
+      <div id="edu" class="cv-tab-content active">
+        <span class="sub-tag tag-sinopia">LO QUE HE ESTUDIADO</span>
         <h3>Educación</h3>
-        <div class="edu-list">
-          <div class="item-block">
-            <span class="pill-type">LICENCIATURA</span>
-            <h4>Mercadotecnia Digital</h4>
-            <p>Universidad Cuauhtémoc, Aguascalientes</p>
+        <div class="clean-grid-4">
+          <div class="list-item bg-sinopia-card">
+            <span class="item-badge bg-rose-tag">ESTUDIANDO</span>
+            <div class="item-details">
+              <h4>Lic. en Mercadotecnia Digital</h4>
+              <p class="school-name">Universidad Cuauhtémoc</p>
+              <p class="school-date">2024 - Presente</p>
+              <p class="school-desc">Actualmente estoy estudiando Mercadotecnia Digital y cada semestre voy sumando herramientas que sí puedo llevar a proyectos reales.</p>
+            </div>
           </div>
-          <div class="item-block">
-            <span class="pill-type">CAPACITACIÓN</span>
-            <h4>Curso en Inteligencia Artificial</h4>
-            <p>Capacitación realizada en Aguascalientes enfocada en herramientas y tecnologías emergentes.</p>
+
+          <div class="list-item bg-purple-card">
+            <span class="item-badge bg-grape-tag">ANTES DE MARKETING</span>
+            <div class="item-details">
+              <h4>Ing. en Sistemas Computacionales</h4>
+              <p class="school-name">Univ. Politécnica de Aguascalientes</p>
+              <p class="school-date">2022 - 2024</p>
+              <p class="school-desc">Estudié esta carrera antes de cambiarme a marketing. No la terminé, pero ese tiempo me dejó una base de programación que hoy sigo usando en mis proyectos web.</p>
+            </div>
           </div>
-          <div class="item-block">
-            <span class="pill-type">TÉCNICO</span>
-            <h4>Técnico en Programación</h4>
-            <p>CECyTEA Ferrocarriles, Aguascalientes</p>
+
+          <div class="list-item bg-green-card">
+            <span class="item-badge bg-lincoln-tag">TÉCNICO</span>
+            <div class="item-details">
+              <h4>Técnico en Programación</h4>
+              <p class="school-name">CECyTEA Ferrocarriles</p>
+              <p class="school-desc">Aquí empezó mi interés por la programación y por crear cosas para web. Fue la base de lo que hoy hago cuando mezclo marketing con desarrollo.</p>
+            </div>
+          </div>
+
+          <div class="list-item bg-blue-card">
+            <span class="item-badge bg-cerulean-tag">DIPLOMADO</span>
+            <div class="item-details">
+              <h4>Diplomado en IA</h4>
+              <p class="school-desc">Lo tomé para aprender a usar la inteligencia artificial de forma más práctica en procesos creativos, de contenido y trabajo.</p>
+            </div>
           </div>
         </div>
       </div>
       
-      <!-- experiencia real con ab marketing -->
-      <div id="exp" class="tab-content">
-        <h3>Experience</h3>
-        <div class="exp-list">
-          <div class="item-block">
-            <span class="pill-type">ACTUAL</span>
-            <h4>Estrategia & Desarrollo Web — AB Marketing</h4>
-            <p>Desarrollo de proyectos creativos, páginas web e implementación de campañas digitales en Aguascalientes.</p>
+      <!-- experiencia -->
+      <div id="exp" class="cv-tab-content">
+        <span class="sub-tag tag-rose">LO QUE HE HECHO</span>
+        <h3>Experiencia</h3>
+        <div class="clean-grid-3">
+          <div class="list-item bg-rose-card">
+            <span class="item-badge bg-sinopia-tag">ACTUAL</span>
+            <div class="item-details">
+              <h4>Marketing, estrategia & web</h4>
+              <p class="school-name">AB Marketing</p>
+              <p class="school-desc">En AB Marketing trabajo en proyectos donde se cruzan estrategia, contenido y web: desde aterrizar una idea hasta convertirla en una landing o una pieza lista para publicarse.</p>
+            </div>
           </div>
-          <div class="item-block">
-            <span class="pill-type">CREATIVIDAD</span>
-            <h4>Branding & Contenido Creativo</h4>
-            <p>Diseño conceptual de identidad de marca, empaque y formatos editoriales con dirección estética única.</p>
+
+          <div class="list-item bg-purple-card">
+            <span class="item-badge bg-grape-tag">CREATIVIDAD</span>
+            <div class="item-details">
+              <h4>Branding & contenido</h4>
+              <p class="school-desc">He creado conceptos de marca, identidades visuales, contenido y propuestas gráficas. Me gusta especialmente la parte de bajar una idea y convertirla en algo que tenga personalidad.</p>
+            </div>
           </div>
-          <div class="item-block">
-            <span class="pill-type">SERVICIO</span>
-            <h4>Atención, Cuidado & Servicio</h4>
-            <p>Experiencia como niñera y mesera, desarrollando habilidades de cuidado responsable, atención al detalle, comunicación clara y resolución bajo presión.</p>
+
+          <div class="list-item bg-green-card">
+            <span class="item-badge bg-lincoln-tag">HABILIDADES</span>
+            <div class="item-details">
+              <h4>Atención al cliente</h4>
+              <p class="school-desc">Antes de estar de lleno en marketing también trabajé como mesera (2019–2021) y niñera (2020–2022). Aunque son experiencias diferentes, me enseñaron muchísimo sobre trato con personas, responsabilidad y resolver lo que toca en el momento.</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- skills y herramientas (tools exactas) -->
-      <div id="skills" class="tab-content">
-        <h3>Skills</h3>
-        <div class="skills-wrapper">
-          <span class="skill-chip">Marketing</span>
-          <span class="skill-chip">Diseño</span>
-          <span class="skill-chip">Comunicación</span>
-          <span class="skill-chip">Programación</span>
-          <span class="skill-chip">Creatividad</span>
-          <span class="skill-chip">Inteligencia Artificial</span>
-          <span class="skill-chip">Análisis</span>
-        </div>
-        
-        <h4 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.1rem;">Tools</h4>
-        <div class="skills-wrapper">
-          <span class="tool-chip">Figma</span>
-          <span class="tool-chip">Canva</span>
-          <span class="tool-chip">Adobe</span>
-          <span class="tool-chip">HTML</span>
+      <!-- habilidades -->
+      <div id="skills" class="cv-tab-content">
+        <span class="sub-tag tag-grape">LO QUE SÉ HACER</span>
+        <h3>Skills & tools</h3>
+        <div class="skills-grid-spread">
+          <div class="skill-group-box bg-grape-card">
+            <h4>Habilidades</h4>
+            <div class="chips-container">
+              <span class="chip chip-sinopia">Marketing Digital</span>
+              <span class="chip chip-lime">Diseño de Marca</span>
+              <span class="chip chip-rose">Estrategia de Contenido</span>
+              <span class="chip chip-magenta">Desarrollo Web</span>
+              <span class="chip chip-cerulean">Inteligencia Artificial</span>
+            </div>
+          </div>
+          
+          <div class="skill-group-box bg-grape-card">
+            <h4>Software y Plataformas</h4>
+            <div class="chips-container">
+              <span class="chip chip-rose">Meta Ads</span>
+              <span class="chip chip-cerulean">Google Ads</span>
+              <span class="chip chip-magenta">Canva</span>
+              <span class="chip chip-sinopia">Adobe Illustrator</span>
+              <span class="chip chip-lime">HTML / CSS</span>
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
   </section>
 
-  <!-- creative project: podcast -->
+  <!-- podcast -->
   <section class="podcast-section">
-    <div class="podcast-card">
-      <div class="podcast-img-container">
+    <div class="podcast-card bg-blood-red">
+      <div class="podcast-img-wrap">
         <img src="noeraparatanto.png" alt="No Era Para Tanto Podcast" class="podcast-cover">
       </div>
+
       <div class="podcast-info">
-        <span class="category-pill">CREATIVE PROJECT</span>
-        <h3>Podcast: No Era Para Tanto 🎙️</h3>
-        <p>Un espacio de tres amigas donde hablamos de amor, experiencias y esas conversaciones que normalmente terminan entre amigas.</p>
-        <div class="episode-box">
+        <h3 class="podcast-title-pink">Podcast: No Era Para Tanto 🎙️</h3>
+        <p class="text-podcast-light">Este fue de esos proyectos de la uni que empezaron como una idea y terminaron siendo algo real. Lo hicimos entre cuatro amigas: pensamos el concepto, grabamos, editamos y armamos las pláticas desde cero.</p>
+
+        <div class="episode-box text-podcast-light">
           <strong>Episodio 01</strong> — La primera vez que nos rompieron el corazón <span class="duration">• 15 min</span>
         </div>
-        <a href="https://drive.google.com/file/d/1Ey6que_tcgcRsT-hdp_-19RPINtqyGDQ/view?usp=sharing" target="_blank" class="btn-podcast">Escuchar episodio en Drive ↗</a>
+
+        <a href="https://drive.google.com/file/d/1Ey6que_tcgcRsT-hdp_-19RPINtqyGDQ/view?usp=sharing" target="_blank" class="btn-primary-pink">Ver episodio</a>
       </div>
     </div>
   </section>
 
-  <!-- brand projects con enfoques reales -->
-  <section class="brand-section">
+  <!-- brand projects -->
+  <section class="brand-folder-section">
     <div class="section-title">
-      <h2>Brand Projects</h2>
+      <h2 class="title-clean">Brand Projects</h2>
+      <p class="subtitle-clean">Proyectos donde he podido jugar con estrategia, investigación, branding y creatividad.</p>
     </div>
-    <div class="brand-grid">
-      
-      <!-- 01 rhode 2026 -->
-      <a href="rhode.pdf" target="_blank" class="mac-folder folder-pink">
-        <div class="mac-tab"><span>2026</span></div>
-        <div class="mac-content">
-          <div class="brand-img-wrap"><img src="rhode.png" alt="Rhode"></div>
-          <div class="brand-meta">
-            <h4>Rhode</h4>
-            <span class="brand-cat">CAMPAÑA DIGITAL & CONTENIDO</span>
+
+    <div class="brand-folder-container">
+      <div class="brand-folder-tabs">
+        <button class="b-tab tab-rose active" data-brand="b-rhode">
+          Rhode
+        </button>
+        <button class="b-tab tab-lincoln" data-brand="b-leiza">
+          Leiza
+        </button>
+        <button class="b-tab tab-magenta" data-brand="b-bloom">
+          Bloom
+        </button>
+        <button class="b-tab tab-sinopia" data-brand="b-porcini">
+          Porcini Sapore
+        </button>
+      </div>
+
+      <div class="brand-folder-body">
+        
+        <div id="b-rhode" class="brand-tab-content active">
+          <div class="brand-detail-grid bg-sinopia-card">
+            <div class="brand-detail-text">
+              <span class="project-year-pill bg-sinopia">PROYECTO ACADÉMICO</span>
+              <h3>Rhode</h3>
+              <p>En este proyecto analicé cómo una marca puede crecer desde lo digital, generar conversación y construir una comunidad que realmente quiera seguirla.</p>
+              <a href="rhode.pdf" target="_blank" class="btn-pdf-link btn-link-sinopia">Ver proyecto</a>
+            </div>
+
+            <div class="brand-detail-img">
+              <img src="rhode.png" alt="Rhode Project">
+            </div>
           </div>
         </div>
-      </a>
 
-      <!-- 02 leiza 2026 -->
-      <a href="leiza.pdf" target="_blank" class="mac-folder folder-ocean">
-        <div class="mac-tab"><span>2026</span></div>
-        <div class="mac-content">
-          <div class="brand-img-wrap"><img src="leiza.jpg" alt="Leiza"></div>
-          <div class="brand-meta">
-            <h4>Leiza</h4>
-            <span class="brand-cat">INVESTIGACIÓN DE MERCADO</span>
+        <div id="b-leiza" class="brand-tab-content">
+          <div class="brand-detail-grid bg-magenta-card">
+            <div class="brand-detail-text">
+              <span class="project-year-pill bg-magenta">PROYECTO ACADÉMICO</span>
+              <h3>Leiza</h3>
+              <p>Hice una investigación para entender mejor cómo compran, qué valoran y qué hace que las personas recomienden una tienda de moda femenina.</p>
+              <a href="leiza.pdf" target="_blank" class="btn-pdf-link btn-link-magenta">Ver proyecto</a>
+            </div>
+
+            <div class="brand-detail-img">
+              <img src="leiza.jpg" alt="Leiza Project">
+            </div>
           </div>
         </div>
-      </a>
 
-      <!-- 03 bloom 2025 -->
-      <a href="bloom.pdf" target="_blank" class="mac-folder folder-vibrant-green">
-        <div class="mac-tab"><span>2025</span></div>
-        <div class="mac-content">
-          <div class="brand-img-wrap"><img src="bloom.png" alt="Bloom"></div>
-          <div class="brand-meta">
-            <h4>Bloom</h4>
-            <span class="brand-cat">BRANDING & ESTRATEGIA</span>
+        <div id="b-bloom" class="brand-tab-content">
+          <div class="brand-detail-grid bg-green-card">
+            <div class="brand-detail-text">
+              <span class="project-year-pill bg-lincoln">EMPRENDIMIENTO PROPIO</span>
+              <h3>Bloom</h3>
+              <p>Este fue un proyecto propio en el que trabajé desde la idea de la marca hasta su identidad visual y contenido. Fue de esos proyectos donde pude probar cómo se siente llevar una idea desde cero.</p>
+              <a href="bloom.pdf" target="_blank" class="btn-pdf-link btn-link-lincoln">Ver proyecto</a>
+            </div>
+
+            <div class="brand-detail-img">
+              <img src="bloom.png" alt="Bloom Project">
+            </div>
           </div>
         </div>
-      </a>
 
-      <!-- 04 porcini sapore 2024 -->
-      <a href="porcinitisapore.pdf" target="_blank" class="mac-folder folder-orange">
-        <div class="mac-tab"><span>2024</span></div>
-        <div class="mac-content">
-          <div class="brand-img-wrap"><img src="porcinisapore.png" alt="Porcini Sapore"></div>
-          <div class="brand-meta">
-            <h4>Porcini Sapore</h4>
-            <span class="brand-cat">EDITORIAL & MARCA</span>
+        <div id="b-porcini" class="brand-tab-content">
+          <div class="brand-detail-grid bg-rose-card">
+            <div class="brand-detail-text">
+              <span class="project-year-pill bg-rose">PROYECTO ACADÉMICO</span>
+              <h3>Porcini Sapore</h3>
+              <p>Trabajé la identidad visual y los empaques pensando en cómo hacer que una línea de productos artesanales tuviera una imagen clara, reconocible y coherente.</p>
+              <a href="porcinitisapore.pdf" target="_blank" class="btn-pdf-link btn-link-rose">Ver proyecto</a>
+            </div>
+
+            <div class="brand-detail-img">
+              <img src="porcinisapore.png" alt="Porcini Sapore Project">
+            </div>
           </div>
         </div>
-      </a>
 
+      </div>
     </div>
   </section>
 
-  <!-- web & technology con fechas actualizadas -->
+  <!-- web & tecnología -->
   <section class="web-section">
     <div class="section-title">
-      <h2>Web & Technology</h2>
+      <h2 class="title-clean">Web & tecnología</h2>
+      <p class="subtitle-clean">También me gusta la parte de hacer que las ideas funcionen en pantalla. Estos son algunos sitios y landings que he desarrollado.</p>
     </div>
-    <div class="web-5-grid">
-      
-      <!-- 01 alfa & omega 2024 -->
-      <a href="https://adrigalot.github.io/ayo/" target="_blank" class="mac-folder folder-pink">
-        <div class="mac-tab"><span>2024</span></div>
-        <div class="mac-content">
+    
+    <div class="web-bento-grid">
+
+      <a href="https://adrigalot.github.io/ayo/" target="_blank" class="bento-card bento-rose">
+        <div class="bento-header">
+          <span class="bento-year">2024</span>
+          <span class="bento-icon">↗</span>
+        </div>
+
+        <div class="bento-body">
           <h4>Alfa & Omega</h4>
-          <p>Desarrollo Web</p>
-          <span class="web-link">Ver sitio ↗</span>
+          <p>Desarrollo frontend y estructura de una plataforma web.</p>
         </div>
       </a>
 
-      <!-- 02 coparmex 2025 -->
-      <a href="https://coparmex.netlify.app" target="_blank" class="mac-folder folder-vibrant-green">
-        <div class="mac-tab"><span>2025</span></div>
-        <div class="mac-content">
+      <a href="https://coparmex.netlify.app" target="_blank" class="bento-card bento-sinopia">
+        <div class="bento-header">
+          <span class="bento-year">2025</span>
+          <span class="bento-icon">↗</span>
+        </div>
+
+        <div class="bento-body">
           <h4>Coparmex</h4>
-          <p>Sitio Web & Contenido</p>
-          <span class="web-link">Ver sitio ↗</span>
+          <p>Organización de información y desarrollo de una experiencia web clara.</p>
         </div>
       </a>
 
-      <!-- 03 distrito victoria 2026 -->
-      <a href="https://distritovictoria.netlify.app" target="_blank" class="mac-folder folder-yellow-highlight">
-        <div class="mac-tab"><span>2026</span></div>
-        <div class="mac-content">
+      <a href="https://distritovictoria.netlify.app" target="_blank" class="bento-card bento-grape">
+        <div class="bento-header">
+          <span class="bento-year">2026</span>
+          <span class="bento-icon">↗</span>
+        </div>
+
+        <div class="bento-body">
           <h4>Distrito Victoria</h4>
-          <p>Landing Page Comercial</p>
-          <span class="web-link">Ver sitio ↗</span>
+          <p>Landing comercial pensada para presentar y vender una propuesta.</p>
         </div>
       </a>
 
-      <!-- 04 aunna landing 2026 -->
-      <a href="https://aunna-landing.netlify.app" target="_blank" class="mac-folder folder-ocean">
-        <div class="mac-tab"><span>2026</span></div>
-        <div class="mac-content">
+      <a href="https://aunna-landing.netlify.app" target="_blank" class="bento-card bento-magenta">
+        <div class="bento-header">
+          <span class="bento-year">2026</span>
+          <span class="bento-icon">↗</span>
+        </div>
+
+        <div class="bento-body">
           <h4>Aunna Landing</h4>
-          <p>Landing Page Inmobiliaria</p>
-          <span class="web-link">Ver sitio ↗</span>
+          <p>Diseño y desarrollo de una landing responsiva para inmobiliaria.</p>
         </div>
       </a>
 
-      <!-- 05 alvaplast mx 2026 -->
-      <a href="https://alvaplastmx.com" target="_blank" class="mac-folder folder-orange">
-        <div class="mac-tab"><span>2026</span></div>
-        <div class="mac-content">
+      <a href="https://alvaplastmx.com" target="_blank" class="bento-card bento-cerulean">
+        <div class="bento-header">
+          <span class="bento-year">2026</span>
+          <span class="bento-icon">↗</span>
+        </div>
+
+        <div class="bento-body">
           <h4>Alvaplast MX</h4>
-          <p>Sitio Web Industrial</p>
-          <span class="web-link">Ver sitio ↗</span>
+          <p>Sitio web para presentar productos y servicios de una empresa industrial.</p>
         </div>
       </a>
 
     </div>
   </section>
 
-  <!-- contacto let's connect -->
+  <!-- let's connect -->
   <section class="connect-section">
-    <div class="connect-header">
-      <h2>LET'S CONNECT.</h2>
-      <p>¿Hablamos de ideas, proyectos o algo nuevo?</p>
-    </div>
-    
-    <div class="connect-body-full">
-      <div class="connect-blocks">
-        <div class="connect-block">
-          <span class="block-label">EMAIL</span>
-          <a href="mailto:adrigalotm@gmail.com" class="block-value">adrigalotm@gmail.com</a>
+    <div class="connect-card-main bg-lightlime">
+
+      <div class="connect-header">
+        <h2>HABLEMOS.</h2>
+        <p>Si tienes una idea, un proyecto o quieres platicar sobre algo que estás creando, hablemos.</p>
+      </div>
+      
+      <div class="connect-grid">
+
+        <div class="connect-card">
+          <span class="card-label">EMAIL</span>
+          <a href="mailto:adrigalotm@gmail.com" class="card-val">adrigalotm@gmail.com</a>
         </div>
-        <div class="connect-block">
-          <span class="block-label">PHONE</span>
-          <span class="block-value">449 101 7717</span>
+
+        <div class="connect-card">
+          <span class="card-label">TELÉFONO</span>
+          <span class="card-val">449 101 7717</span>
         </div>
-        <div class="connect-block">
-          <span class="block-label">LOCATION</span>
-          <span class="block-value">📍 Aguascalientes, México</span>
+
+        <div class="connect-card">
+          <span class="card-label">UBICACIÓN</span>
+          <span class="card-val">📍 Aguascalientes, México</span>
         </div>
-        <div class="connect-block buttons-block">
-          <a href="https://instagram.com/adrianagalot" target="_blank" class="btn-connect">Instagram ↗</a>
-          <a href="https://www.linkedin.com/in/adriana-galot-8b070b29a" target="_blank" class="btn-connect">LinkedIn ↗</a>
+
+        <div class="connect-card connect-socials-box">
+          <a href="https://instagram.com/adrianagalot" target="_blank" class="btn-connect-soc">Instagram</a>
+          <a href="https://www.linkedin.com/in/adriana-galot-8b070b29a" target="_blank" class="btn-connect-soc">LinkedIn</a>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- footer coral con firma adrianamorales - adri -->
-  <footer class="custom-footer">
-    <div class="footer-content">
-      <div class="footer-name">adrianamorales - <span class="footer-green-text">adri</span></div>
-      <div class="footer-socials">
+  <!-- pie de pagina -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">All glory to God :)</div>
+
+      <div class="footer-links">
         <a href="https://instagram.com/adrianagalot" target="_blank">Instagram</a>
         <a href="https://www.linkedin.com/in/adriana-galot-8b070b29a" target="_blank">LinkedIn</a>
       </div>
     </div>
   </footer>
 
-  <script>
-    function openTab(evt, tabName) {
-      let contents = document.getElementsByClassName("tab-content");
-      for (let i = 0; i < contents.length; i++) {
-        contents[i].classList.remove("active");
-      }
-      let buttons = document.getElementsByClassName("tab-btn");
-      for (let i = 0; i < buttons.length; i++) {
-        buttons[i].classList.remove("active");
-      }
-      document.getElementById(tabName).classList.add("active");
-      evt.currentTarget.classList.add("active");
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
